@@ -1,0 +1,7 @@
+{
+  "name": "peoravisosesnada",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

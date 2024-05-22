@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Publicaciones
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let aviso of avisos">
+      <ion-label>{{ aviso.titulo }}</ion-label>
+      <ion-label>{{ aviso.fecha | date:'yyyy-MM-dd' }}</ion-label>
+      <ion-icon name="trash" slot="end" (click)="confirmarEliminacion(aviso)"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
